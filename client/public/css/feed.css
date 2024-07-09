@@ -42,10 +42,10 @@ a {
 }
 
 #redfox{
-	position: relative;
+	position: left;
 	float: left;
-	height: 50px;
-	bottom: 5px;
+	height: 60px;
+	bottom: 6px;
 }
 
 #newsfeed {
