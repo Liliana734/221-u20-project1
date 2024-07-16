@@ -1,5 +1,6 @@
 const express = require('express')
 const app = express();
+const feedController = require('./server/controller/feedController');
 app.use(express.static('client/public'));
 
 app.get('/', function(req, res) {
@@ -11,3 +12,10 @@ app.get('/feed', function (rep,res){
 })
 
 app.listen(1337, () => console.log('Listening on port 1337.'))
+
+//API endpoints
+
+const userRoutes = require ("./routes/userRouts");
+app.user("/app/users", userRoutes);
+
+app.listen(1337,() => console.log('Listening on port 1337.'))
