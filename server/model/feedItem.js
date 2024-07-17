@@ -1,10 +1,12 @@
 class FeedItem {
-    constructor(id, content) {
-      this.id = id;
-      this.content = content;
+    constructor(title, body, linkUrl, imageUrl) {
+        this.title = title;
+        this.body = body;
+        this.linkUrl = linkUrl;
+        this.imageUrl = imageUrl;
     }
-  }
-  
-  module.exports = FeedItem;
-//const express = require('express');
-//const router = express.Router();
+}
+
+exports.createUser = function(id, title, body, linkUrl, imageUrl) {
+    return new user(id, title,body,linkUrl,imageUrl);
+};
