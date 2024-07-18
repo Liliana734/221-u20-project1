@@ -1,14 +1,14 @@
 class FeedItem {
-    constructor(id, title, body, linkUrl, imageUrl) {
+    constructor(id, purple,square, small, ten) {
         this.id = id;
-        this.title = title;
-        this.body = body;
-        this.linkUrl = linkUrl;
-        this.imageUrl = imageUrl;
+        this.color = purple;
+        this.shape = square;
+        this.size = small;
+        this.amount = ten;
     }
 }
 
 
-exports.createFeedItem = function(id, title, body, linkUrl, imageUrl) {
-    return new FeedItem(id, title, body, linkUrl, imageUrl);
+exports.createFeedItem = function(id, color, shape, size, amount) {
+    return new FeedItem(id, color, shape, size, amount);
   };
