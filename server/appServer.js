@@ -8,7 +8,7 @@ app.get('/', function(req, res) {
 })
 app.get('/feed', function(req, res) {
     res.sendFile('feed.html', {root: './client/views'})
-})
+});
 //API endpoints
 const feedRoutes = require('./route/feedRoutes');
 app.use('/api', feedRoutes);

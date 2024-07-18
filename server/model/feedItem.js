@@ -11,4 +11,4 @@ class FeedItem {
 
 exports.createFeedItem = function(id, color, shape, size, amount) {
     return new FeedItem(id, color, shape, size, amount);
-  };
+};
